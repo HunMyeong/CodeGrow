@@ -1,3 +1,8 @@
+<!-- 
+	작성자 : 홍서현, 강문호
+	기능 : 강의 페이지의 동영상, 리스트, 찜 추가/제거, 코드에디터 등
+	Git : https://github.com/Hongseohyun
+ -->
 <%@page import="Myeong.Hun.VideoListDao"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="Myeong.Hun.VideoListDto"%>
@@ -29,20 +34,26 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 <!-- codeEditor에서 사용되는 style file -->
 <link rel="stylesheet" href="./codemirror-5.65.13/lib/codemirror.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/3024-day.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/base16-light.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/duotone-dark.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/duotone-light.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/base16-light.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/duotone-dark.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/duotone-light.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/eclipse.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/hopscotch.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/juejin.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/lucario.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/material.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/material-palenight.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/material-palenight.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/mdn-like.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/neat.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/neo.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/oceanic-next.css">
-<link rel="stylesheet" href="./codemirror-5.65.13/theme/paraiso-light.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/oceanic-next.css">
+<link rel="stylesheet"
+	href="./codemirror-5.65.13/theme/paraiso-light.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/railscasts.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/shadowfox.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/solarized.css">
@@ -50,7 +61,8 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/yeti.css">
 <link rel="stylesheet" href="./codemirror-5.65.13/theme/zenburn.css">
 <!-- fontawessome icon import -->
-<script src="https://kit.fontawesome.com/08a7424104.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/08a7424104.js"
+	crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -68,7 +80,9 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 					<h2 class="url-title"><%=title%></h2>
 					<h4 class="url-content"><%=content%></h4>
 					<!-- 관심목록 버튼 -->
-					<button id="addToFavoritesBtn">관심목록 추가 <i class="fa-solid fa-plus add"></i></button>
+					<button id="addToFavoritesBtn">
+						관심목록 추가 <i class="fa-solid fa-plus add"></i>
+					</button>
 					<!-- 조회수, 관심목록 버튼은 display: flex 해야함  -->
 					<!--  <span>조회수 : </span>  -->
 					<ul class="list">
@@ -81,13 +95,13 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 										src="https://img.youtube.com/vi/<%=dto.getUrl()%>/maxresdefault.jpg"
 										allowfullscreen class="sub-url"></embed>
 									<div>
-										<span class="sub-url-title"><%=dto.getTitle()%></span>
-										<span class="sub-url-content"><%=dto.getDescription()%></span>
+										<span class="sub-url-title"><%=dto.getTitle()%></span> <span
+											class="sub-url-content"><%=dto.getDescription()%></span>
 									</div>
-							</a></li> 
+							</a></li>
 							<%} %>
 							<!-- end  -->
-							
+
 						</div>
 					</ul>
 				</div>
@@ -125,7 +139,8 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 						<option>zenburn</option>
 					</select>
 				</p>
-			</div> <!-- flex-box -->
+			</div>
+			<!-- flex-box -->
 			<div style="display: flex;">
 				<div class=CodeMirror style="flex: 1;" id="aa">
 					<textarea id="code" name="code">
@@ -134,20 +149,20 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 			<head>
 			 <title>Mixed HTML Example</title>
 			 <style scoped>
-				h1 {
-					font-family: comic sans;
-					color: #f0f;
-				}
-				
-				div {
-					background: yellow !important;
-				}
-				
-				body {
-					max-width: 50em;
-					margin: 1em 2em 1em 5em;
-				}
-				</style>
+h1 {
+	font-family: comic sans;
+	color: #f0f;
+}
+
+div {
+	background: yellow !important;
+}
+
+body {
+	max-width: 50em;
+	margin: 1em 2em 1em 5em;
+}
+</style>
 			  </head>
 			  <body>
 			    <h1>Mixed HTML Example</h1>
@@ -171,7 +186,7 @@ ArrayList<VideoListDto> dtos = dao.list(lang);
 	</section>
 	<!-- footer file -->
 	<%@include file="./footer.jsp"%>
-	
+
 	<!-- jquery import -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- main script file -->

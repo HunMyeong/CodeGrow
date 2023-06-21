@@ -1,3 +1,9 @@
+/**
+ * 작성자 : 강문호
+ * 기능 : 회원 로그인 처리 및 회원가입/수정/탈퇴
+ * Git : https://github.com/whiteDwarff
+ **/
+
 package member;
 
 import java.sql.Connection;

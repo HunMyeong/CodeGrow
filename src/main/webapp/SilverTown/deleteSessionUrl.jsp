@@ -1,8 +1,13 @@
+<!-- 
+	작성자 : 홍서현
+	기능 : 찜 목록 삭제
+	Git : https://github.com/Hongseohyun
+ -->
 <%@page import="java.util.ArrayList"%>
 <%@page import="Myeong.Hun.VideoListDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
+	pageEncoding="UTF-8"%>
+
 <%
 ArrayList<String> list = (ArrayList<String>) session.getAttribute("videoList");
 String title = request.getParameter("title");

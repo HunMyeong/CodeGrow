@@ -1,8 +1,7 @@
 /**
-* 작성자 : EAN21V12
-* 작성일 : 2023. 5. 13.
-* 파일명 : VideoListDto.java
-* 프로그램 설명 : 
+* 작성자 : 박훈명
+* 기능 : 동영상 관련 Dto
+* Git : https://github.com/HunMyeong
 **/
 package Myeong.Hun;
 

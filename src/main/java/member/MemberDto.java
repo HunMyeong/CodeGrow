@@ -1,3 +1,8 @@
+/**
+ * 작성자 : 강문호
+ * 기능 : 회원관련 Dto
+ * Git : https://github.com/whiteDwarff
+ */
 package member;
 
 public class MemberDto {

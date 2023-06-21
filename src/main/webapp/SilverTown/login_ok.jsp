@@ -1,15 +1,20 @@
+<!-- 
+	작성자 : 홍서현
+	기능 : 로그인 처리 기능
+	Git : https://github.com/Hongseohyun
+ -->
 <%@page import="member.MemberDto"%>
 <%@page import="member.MemberDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.sql.*"%>
+	pageEncoding="UTF-8" import="java.sql.*"%>
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="UTF-8">
- <title>Insert title here</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
-<%
+	<%
 	request.setCharacterEncoding("utf-8");
 	String email = request.getParameter("email");
 	String pwd = request.getParameter("password");
@@ -24,10 +29,10 @@
 		session.setAttribute("phone", dto.getPhone());
 		response.sendRedirect("index.jsp");
 	} else { %>
-	 <script>
+	<script>
 		  if(confirm("아이디 / 비밀번호가 일치하지 않습니다.")) location.href="login.jsp";
 		  else history.back();
 	 </script>
-<% } %>
+	<% } %>
 </body>
 </html>

@@ -1,7 +1,12 @@
+<!-- 
+	작성자 : 박훈명
+	기능 : 게시판 글 작성 완료 처리
+	Git : https://github.com/HunMyeong
+ -->
 <%@page import="Myeong.Hun.BoardDao"%>
 <%@page import="Myeong.Hun.BoardDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.sql.*"%>
+	pageEncoding="UTF-8" import="java.sql.*"%>
 <%@page import="javax.sql.DataSource"%>
 <%@page import="java.sql.*"%>
 <%@page import="javax.naming.Context"%>

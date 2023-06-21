@@ -1,3 +1,8 @@
+/**
+ * 작성자 : 박훈명
+ * 기능 : 게시글 작성/수정/삭제 + 댓글 작성/수정/삭제
+ * Git : https://github.com/HunMyeong
+ */
 package Myeong.Hun;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

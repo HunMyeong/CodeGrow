@@ -1,4 +1,8 @@
-
+<!-- 
+	작성자 : 박훈명, 강문호
+	기능 : 게시판 글 목록 출력
+	Git : https://github.com/whiteDwarff
+ -->
 <%@page import="Myeong.Hun.BoardDto"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="Myeong.Hun.BoardDao"%>
@@ -11,9 +15,9 @@
 <%@page import="javax.naming.InitialContext"%>
 
 <%
-	if(session.getAttribute("email") == null){
-		response.sendRedirect("login.jsp");
-	}
+if (session.getAttribute("email") == null) {
+	response.sendRedirect("login.jsp");
+}
 %>
 
 <!DOCTYPE html>

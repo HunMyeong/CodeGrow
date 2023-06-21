@@ -1,9 +1,7 @@
 <%--
-	작성자 : munhokang
-	작성일 : 2023. 5. 11.
-	comment : 
-		- footer file
-		- include로 사용할 것
+	작성자 : 강문호
+	기능 : 홈페이지 하단부분 제작
+	Git : https://github.com/whiteDwarff
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -68,6 +66,7 @@ body>footer>div>div:nth-child(2) {
 		margin: 13px 0;
 	}
 }
+
 @media screen and (max-width: 750px) {
 	footer {
 		padding: 5px 0;
@@ -83,7 +82,9 @@ body>footer>div>div:nth-child(2) {
 	body>footer>div>div:nth-child(2) {
 		margin: 6px 0;
 	}
-	footer span { font-size: 12px; }
+	footer span {
+		font-size: 12px;
+	}
 	.img-wrap img {
 		width: 25px;
 	}

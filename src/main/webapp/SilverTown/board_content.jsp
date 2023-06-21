@@ -1,15 +1,11 @@
+<!-- 
+	작성자 : 박훈명, 강문호, 홍서현
+	기능 : 게시판 상세 페이지 기능
+	Git : https://github.com/Hongseohyun
+ -->
 <%@page import="Myeong.Hun.BoardDto"%>
 <%@page import="Myeong.Hun.BoardDao"%>
 <%@page import="java.util.List"%>
-<%
-/*
-=============================================
-작성자 : 박훈명
-작성일 : 2023. 5. 12.
-프로그램 기능 : 게시글 상세 내용
-=============================================
-*/
-%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
@@ -97,11 +93,10 @@ List<BoardDto> dtos = dao.comment(boardId);
 			<span>댓글작성</span>
 			<form method="get" action="board_comment_insert.jsp" id="contentForm">
 				<!-- name, boardId는 display: none -->
-				<input type="text" placeholder="이름" name="comment_name"
-					class="hidden"> <input type="text" name="comment_content"
-					id="comment"> <input type="text" value="<%= boardId %>"
-					name="board_Id" class="hidden"> <input type="text"
-					value="<%= title %>" name="title" class="hidden">
+				<input type="text" placeholder="이름" name="comment_name" class="hidden">
+				<input type="text" name="comment_content" id="comment">
+				<input type="text" value="<%= boardId %>" name="board_Id" class="hidden">
+				<input type="text" value="<%= title %>" name="title" class="hidden">
 				<button id="submit-button">등록</button>
 			</form>
 		</div>
