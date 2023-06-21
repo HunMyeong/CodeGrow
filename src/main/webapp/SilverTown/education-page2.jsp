@@ -272,6 +272,6 @@ body {
 	    <% } } %>
 	   
 	</script>
-	<script src="./script/header1.js"></script>
+	<script src="./script/header.js"></script>
 </body>
 </html>
